@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="ca" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head></head>
+<body>
+	<p>Missatge rebut de l'usuari
+	<span th:if="${not linkEmissor}" th:text="${emissor}"></span>
+	<a th:if="${linkEmissor}" th:href="${emissor}"><span th:text="${#strings.replace(emissor,'https://t.me/','@')}"></span></a>
+	 el <span th:text="${moment}"></span></p>
+    <cite th:text="${contingut}"></cite>
+</body>
+</html>
