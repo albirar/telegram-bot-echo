@@ -27,6 +27,7 @@
 		<connection>scm:git:https://github.com/albirar/telegram-bot-echo.git</connection>
 		<tag>HEAD</tag>
 		<url>https://github.com/albirar/telegram-bot-echo</url>
+		<developerConnection>scm:git:https://github.com/albirar/telegram-bot-echo.git</developerConnection>
 	</scm>
 
 	<properties>
@@ -181,10 +182,9 @@
 				<artifactId>maven-release-plugin</artifactId>
 				<version>2.5.3</version>
 				<configuration>
-					<localCheckout>true</localCheckout>
-					<pushChanges>false</pushChanges>
-					<mavenExecutorId>forked-path</mavenExecutorId>
-					<arguments>-Dgpg.passphrase=${gpg.passphrase}</arguments>
+					<tagNameFormat>v@{project.version}</tagNameFormat>
+					<autoVersionSubmodules>true</autoVersionSubmodules>
+					<releaseProfiles>releases</releaseProfiles>
 				</configuration>
 				<dependencies>
 					<dependency>
@@ -199,9 +199,19 @@
 				<artifactId>nexus-staging-maven-plugin</artifactId>
 				<version>1.6.8</version>
 				<extensions>true</extensions>
+				<executions>
+					<execution>
+						<id>default-deploy</id>
+						<phase>deploy</phase>
+						<goals>
+							<goal>deploy</goal>
+						</goals>
+					</execution>
+				</executions>
 				<configuration>
 					<serverId>ossrh</serverId>
 					<nexusUrl>https://oss.sonatype.org/</nexusUrl>
+					<skipStaging>true</skipStaging>
 					<autoReleaseAfterClose>true</autoReleaseAfterClose>
 				</configuration>
 			</plugin>
