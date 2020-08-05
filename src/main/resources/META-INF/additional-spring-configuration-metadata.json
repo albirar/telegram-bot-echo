@@ -1,0 +1,32 @@
+{"properties": [
+  {
+    "name": "bot.token",
+    "type": "java.lang.String",
+    "description": "Token del bot"
+  },
+  {
+    "name": "bot.username",
+    "type": "java.lang.String",
+    "description": "Nom d'usuari del bot'"
+  },
+  {
+    "name": "bot.email.to",
+    "type": "java.lang.String",
+    "description": "Destinatari dels emails"
+  },
+  {
+    "name": "bot.email.from",
+    "type": "java.lang.String",
+    "description": "Emissor dels emails"
+  },
+  {
+    "name": "bot.missatges.benvinguda",
+    "type": "java.lang.String",
+    "description": "Missatge de benvinguda per a respondre a 'start'"
+  },
+  {
+    "name": "bot.missatges.resposta",
+    "type": "java.lang.String",
+    "description": "Missatge de resposta als missatges enviats a la bústia"
+  }
+]}

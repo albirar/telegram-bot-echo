@@ -1,0 +1,83 @@
+{
+	updateId=373668374, 
+	message=Message{
+	messageId=43, 
+	from=User
+		{
+			id=8714729
+			, firstName='Octavi'
+			, isBot=false
+			, lastName='null'
+			, userName='ofornes'
+			, languageCode='ca'
+		}
+	, date=1586269992
+	, chat=Chat
+		{
+			id=8714729
+			, type='private'
+			, title='null'
+			, firstName='Octavi'
+			, lastName='null'
+			, userName='ofornes'
+			, allMembersAreAdministrators=null
+			, photo=null
+			, description='null'
+			, inviteLink='null'
+			, pinnedMessage=null
+			, stickerSetName='null'
+			, canSetStickerSet=null
+		}
+	, forwardFrom=null
+	, forwardFromChat=null
+	, forwardDate=null, text='null'
+	, entities=null
+	, captionEntities=null
+	, audio=null
+	, document=null
+	, photo=null
+	, sticker=null
+	, video=null
+	, contact=null
+	, location=null
+	, venue=null
+	, pinnedMessage=null
+	, newChatMembers=null
+	, leftChatMember=null
+	, newChatTitle='null'
+	, newChatPhoto=null
+	, deleteChatPhoto=null
+	, groupchatCreated=null
+	, replyToMessage=null
+	, voice=Voice
+		{
+			fileId='AwACAgIAAxkBAAMrXoyPKIz3lCrjhAIuSRUHlO3ySPAAAnQFAAL_MGlIZRUufpabUJ8YBA'
+			, duration=2
+			, mimeType='audio/ogg'
+			, fileSize=8342
+		}
+	, caption='null'
+	, superGroupCreated=null
+	, channelChatCreated=null
+	, migrateToChatId=null
+	, migrateFromChatId=null
+	, editDate=null
+	, game=null
+	, forwardFromMessageId=null
+	, invoice=null
+	, successfulPayment=null
+	, videoNote=null
+	, authorSignature='null'
+	, forwardSignature='null'
+	, mediaGroupId='null'
+	, connectedWebsite='null'
+	, passportData=null}
+	, inlineQuery=null
+	, chosenInlineQuery=null
+	, callbackQuery=null
+	, editedMessage=null
+	, channelPost=null
+	, editedChannelPost=null
+	, shippingQuery=null
+	, preCheckoutQuery=null
+}

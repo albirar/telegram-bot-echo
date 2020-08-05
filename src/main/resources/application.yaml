@@ -1,0 +1,27 @@
+##
+## Configuration for bot execution
+## You should to use properties from settings.xml
+## in order to filter resource and replace tokens with real values
+## 
+spring:
+  mail:
+    host: @bot.email.host@
+    username: @bot.email.username@
+    password: @bot.email.password@
+    port: 465
+    protocol: smtp
+    properties:
+      mail:
+        smtp:
+          auth: true
+          ssl:
+            enable: true
+bot:
+  token: @bot.tg.token@
+  username: @bot.tg.username@
+  email:
+    to: @bot.tg.email.to@
+    from: @bot.tg.email.from@
+  missatges:
+    benvinguda: @bot.tg.missatges.benvinguda@
+    resposta: @bot.tg.missatges.resposta@
