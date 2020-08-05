@@ -1,0 +1,16 @@
+[Unit]
+Description=Telegram ECHO Bot server
+After=syslog.target
+ 
+[Service]
+User=bots
+Group=bots
+
+# Change the path to your java home folder
+Environment=JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-amd64
+
+# Change the path to the correct path of your installation
+ExecStart=/path/to/dir/bot/telegram-bot-echo.sh SuccessExitStatus=143 
+ 
+[Install] 
+WantedBy=multi-user.target
