@@ -9,7 +9,7 @@
 	</parent>
 	<groupId>cat.albirar.telegram.bots</groupId>
 	<artifactId>bot-echo</artifactId>
-	<version>1.0.3-SNAPSHOT</version>
+	<version>1.0.2</version>
 	<name>Bot echo</name>
 	<description>A telegram Bot for get messages as a "mailbox" and send to an email</description>
 	<url>https://github.com/albirar/telegram-bot-echo</url>
